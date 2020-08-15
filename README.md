@@ -3,4 +3,4 @@ Luthfi Alfarisi online resume/portfolio.
 
 No source code. Only contains code that has been built
 
-[luthfi11.github.io](https://www.luthfi11.github.io)
+[luthfi11.github.io](https://luthfi11.github.io)
