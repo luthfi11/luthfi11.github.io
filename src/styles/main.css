@@ -1,0 +1,768 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, main {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #111111;
+    color: white;
+}
+
+main {
+    margin-top: 65px;
+}
+
+main h1, main h2, main h3 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI Light", sans-serif;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+small {
+    color: #CCC;
+}
+
+img {
+    display: block;
+}
+
+nav {
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 34px;
+    position: relative;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    padding: 24px 0;
+    margin: 16px 0 0;
+    text-align: left;
+}
+
+nav li:hover {
+    background: darkblue;
+    border-radius: 0;
+}
+
+nav .active {
+    border-bottom: 2px dodgerblue solid;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 15px 20px;
+}
+
+app-bar {
+    background: #222;
+    width: 100%;
+    display: block;
+    padding-bottom: 12px;
+    padding-top: 10px;
+}
+
+.main-title {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 26px;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 680px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.jumbotron img.user-pict {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 4px;
+    border: 2px solid #333333;
+    border-radius: 50%;
+}
+
+.jumbotron-title {
+    font-size: 50px;
+    line-height: 1;
+    margin: 10px 0 20px 0;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.jumbotron b {
+    color: darkgrey;
+}
+
+.jumbotron-title b {
+    font-family: "Segoe UI", sans-serif;
+    color: dodgerblue;
+}
+
+.jumbotron-subtitle {
+    font-size: 16px;
+    margin: 0 0 4px;
+    letter-spacing: 1px;
+}
+
+.jumbotron ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: block;
+}
+
+.jumbotron li {
+    display: inline-block;
+    margin: 30px 16px 16px;
+    border: 2px #FFF solid;
+    border-radius: 50%;
+}
+
+.jumbotron li:hover {
+    border-color: dodgerblue;
+}
+
+.jumbotron li img:hover {
+    background: dodgerblue;
+}
+
+.jumbotron li img {
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+}
+
+.mail-button {
+    text-decoration: none;
+    padding: 16px 60px;
+    background: dodgerblue;
+    border-radius: 25px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.mail-button:hover {
+    background: darkblue;
+}
+
+.circle-img {
+    border-radius: 6px;
+}
+
+.circle-img-always {
+    border-radius: 50%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    background: #222;
+    z-index: 1;
+}
+
+.sticky + main {
+    margin-top: 100px;
+}
+
+.wrapper {
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.box {
+    border-radius: 6px;
+    background: #333;
+    margin: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.box p {
+    padding: 12px;
+    text-align: center;
+}
+
+.box .logo-bg {
+    background: yellow;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    height: 250px;
+    width: 100%;
+}
+
+.box .edu {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.box .img-exp {
+    margin-left: 0;
+    height: 100%;
+    border-radius: 6px 0 0 6px;
+}
+
+.horizontal-box {
+    border-radius: 6px;
+    background: #333;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1.3fr;
+}
+
+.horizontal-box img {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto 0;
+    object-fit: contain;
+    display: block;
+}
+
+.horizontal-box .content {
+    padding: 10px;
+}
+
+.horizontal-box .content ul {
+    list-style: square;
+}
+
+.horizontal-box .content ul li:before {
+    content: '';
+}
+
+.box-cover {
+    background: black;
+    width: 100%;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border: 1px #333 solid;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 16px;
+}
+
+.panel {
+    border-radius: 6px;
+    background: #333;
+    margin: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.panel:hover {
+    background: #444;
+}
+
+.panel-header {
+    background: #000;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: 1px #222 solid;
+    padding: 12px;
+}
+
+.panel-body {
+    padding: 12px;
+    text-align: right;
+}
+
+.panel-body img {
+    width: 45px;
+    float: left;
+    border-radius: 50%;
+}
+
+.highlight {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.highlight-link {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    background: dodgerblue;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.highlight-link-default {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.highlight-link-default:hover {
+    color: dodgerblue;
+}
+
+.highlight-link:hover {
+    background: darkblue;
+}
+
+.highlight img {
+    width: 180px;
+    margin: 0 auto 10px;
+}
+
+.wrapper-one {
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+    text-align: center;
+}
+
+.wrapper-three {
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.box-flat {
+    border-radius: 6px;
+    background: #333;
+    padding: 12px;
+}
+
+.box-flat .box-body {
+    height: 140px;
+}
+.box-flat .box-footer {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.box-flat:hover {
+    background: #444;
+}
+
+a .box-flat {
+    color: #FFFFFF;
+}
+
+.body b {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.wrapper-one .box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-left: 0;
+    border-radius: 6px 6px 0 0;
+}
+.wrapper-one .body {
+    padding: 10px;
+}
+
+.wrapper-one a {
+    color: #FFFFFF;
+}
+
+.wrapper-one .box:hover {
+    background: #555;
+}
+
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.margin-20 {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.column-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 26px;
+    align-items: center;
+    justify-items: right;
+}
+
+.mini-icon {
+    width: 120px;
+}
+
+.detail-link {
+    color: #FFFFFF;
+    font-weight: 500;
+    display: inline-block;
+    border: 0;
+}
+
+.bordered {
+    background: dodgerblue;
+    border-radius: 25px;
+    padding: 8px 16px 6px;
+    justify-self: left;
+}
+
+.bordered:hover {
+    background: darkblue;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: dodgerblue;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkblue;
+}
+
+@media screen and (min-width: 650px) {
+    main {
+        margin-top: 150px;
+    }
+
+    nav li {
+        padding: 24px 0;
+        display: inline;
+        margin: 2px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    app-bar {
+        background: none;
+        width: auto;
+        display: block;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .jumbotron {
+        background-position: center;
+    }
+
+    .jumbotron-title {
+        font-size: 60px;
+        margin: 0;
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+
+    .jumbotron img.user-pict {
+        width: 200px;
+        height: 200px;
+    }
+
+    .jumbotron li {
+        display: inline-block;
+        margin: 50px;
+        border: 2px #FFF solid;
+        border-radius: 50%;
+    }
+
+    .jumbotron-subtitle {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        margin: 20px 5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wrapper-three {
+        margin: 20px 5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+
+    .wrapper-one {
+        margin: 20px 10%;
+        text-align: left;
+    }
+
+    .wrapper-one .box img {
+        width: 250px;
+        height: 100%;
+        margin-left: 0;
+        border-radius: 6px 0 0 6px;
+    }
+
+    .box {
+        border-radius: 6px;
+        background: #333;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 16px;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+        margin-left: 10px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .box p {
+        padding: 0 0 0 14px;
+        text-align: left;
+    }
+
+    .box .logo-bg {
+        background: yellow;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+        height: 220px;
+        width: 100%;
+    }
+
+    .box-exp {
+        display: block;
+    }
+
+    .box-edu {
+        display: block;
+    }
+
+    .box-edu img {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .circle-img {
+        border-radius: 50%;
+    }
+
+    .panel-body {
+        padding: 12px;
+    }
+
+    .panel-body img {
+        width: 45px;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .horizontal-box .content {
+        padding: 0;
+    }
+
+
+    .sticky {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    main {
+        margin-top: 150px;
+    }
+
+    nav li {
+        padding: 24px 0;
+        display: inline;
+        margin: 20px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    app-bar {
+        background: none;
+        width: auto;
+        display: block;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .jumbotron {
+        background-position: center;
+    }
+
+    .jumbotron-title {
+        font-size: 60px;
+        margin: 0;
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+
+    .jumbotron img.user-pict {
+        width: 200px;
+        height: 200px;
+    }
+
+    .jumbotron li {
+        display: inline-block;
+        margin: 50px;
+        border: 2px #FFF solid;
+        border-radius: 50%;
+    }
+
+    .jumbotron-subtitle {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        margin: 20px 8%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wrapper-three {
+        margin: 20px 15%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+
+    .wrapper-one {
+        margin: 20px 20%;
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+    }
+
+    .wrapper-one .box img {
+        width: 360px;
+        min-height: 220px;
+        margin-left: 0;
+        border-radius: 6px 0 0 6px;
+    }
+
+    .box {
+        border-radius: 6px;
+        background: #333;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 16px;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+        margin-left: 10px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .box p {
+        padding: 0 0 0 14px;
+        text-align: left;
+    }
+
+    .box .logo-bg {
+        background: yellow;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .box .edu {
+        width: 100%;
+        height: auto;
+    }
+
+    .circle-img {
+        border-radius: 50%;
+    }
+
+    .panel-body {
+        padding: 12px;
+    }
+
+    .panel-body img {
+        width: 45px;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .horizontal-box .content {
+        padding: 0;
+    }
+
+    .horizontal-box .content ul {
+        list-style: none;
+    }
+
+    .horizontal-box .content ul li:before {
+        content: '✓ ';
+    }
+
+    .sticky {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .wrapper {
+        margin: 20px 15%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
